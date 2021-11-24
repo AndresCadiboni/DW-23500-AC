@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lubricentro Patagonia</title>
+    <link rel="stylesheet" href="./../styles/styles.css">
 </head>
 <body>
     <header>
@@ -18,38 +19,52 @@
             </ul>
         </nav>
     </header>
-    <hr>
-    <main>
-        <h2>Productos</h2>
-        <form action="">
-            <input type="search" name="buscar_producto">
-            <input type="submit" value="Buscar">
-        </form>
-        <br>
-        <img src="./../sources/images/discos.jpg" alt="discos_amoladora" width="255" height="163">
-        <span>Discos de amoladora</span>
-        <br>
-        <img src="./../sources/images/cepillos.jpg" alt="cepillos_amoladora" width="255" height="163">
-        <span>Cepillos de amoladora</span>
-        <br>
-        <img src="./../sources/images/llave-ajustable.jpg" alt="llaves_ajustables" width="255" height="163">
-        <span>Llaves ajustables</span>
-        <br>
-        <img src="./../sources/images/llaves-convinadas.jpg" alt="llaves_convinadas" width="255" height="163">
-        <span>Llaves convinadas</span>
-        <br>
-        <img src="./../sources/images/martillos.jpg" alt="martillos" width="255" height="163">
-        <span>Martillos</span>
-        <br>
-        <img src="./../sources/images/machos-roscas.jpg" alt="machos_rosca" width="255" height="163">
-        <span>Machos de rosca</span>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <main class="main__prod">
+        <div class="main__caja">
+            <h2 class="main__caja--titulo">Productos</h2>
+        </div>
+        
+            <form action="" class="main__prod__buscar">
+                <input type="search" name="buscar_producto">
+                <input type="submit" value="Buscar">
+            </form>
+
+        <section class="main__prod__listado">
+            <div class="main__prod__listado--izq"> 
+                <img src="./../sources/images/discos.jpg" class="main__prod__listado--img" alt="discos_amoladora">
+                <span class="main__prod__listado--texto">Discos de amoladora</span>
+            </div> 
+            <div class="main__prod__listado--der">
+                <img src="./../sources/images/cepillos.jpg" class="main__prod__listado--img" alt="cepillos_amoladora">
+                <span class="main__prod__listado--texto">Cepillos de amoladora</span>
+            </div>
+            <div class="main__prod__listado--izq"> 
+                <img src="./../sources/images/llave-ajustable.jpg" class="main__prod__listado--img" alt="llaves_ajustables"">
+                <span class="main__prod__listado--texto">Llaves ajustables</span>
+            </div> 
+            <div class="main__prod__listado--der">
+                <img src="./../sources/images/llaves-convinadas.jpg" class="main__prod__listado--img" alt="llaves_convinadas">
+                <span class="main__prod__listado--texto">Llaves convinadas</span>
+            </div>
+            <div class="main__prod__listado--izq"> 
+                <img src="./../sources/images/martillos.jpg" class="main__prod__listado--img" alt="martillos">
+                <span class="main__prod__listado--texto">Martillos</span>
+            </div>
+            <div class="main__prod__listado--der">
+                <img src="./../sources/images/machos-roscas.jpg" class="main__prod__listado--img" alt="machos_rosca">
+                <span class="main__prod__listado--texto">Machos de rosca</span>
+            </div>  
+        </section>
     </main>
-    <hr>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
     <footer>
-        <a href="https://m.facebook.com/LUBRICENTROPATAGONIA2021/" target="blank"><img src="./../sources/images/facebook.png" alt="logo_facebook" width="24" height="24"></a>
-        <a href="https://www.instagram.com/patagonialubricentro/" target="blank"><img src="./../sources/images/logotipo-de-instagram.png" alt="logo_instagram" width="24" height="24"></a>
-        <img src="./../sources/images/whatsapp.png" alt="logo_whatsapp" width="24" height="24">
-        <span>+54 9297 4711049</span>
+        <div class="redes">
+            <a href="https://m.facebook.com/LUBRICENTROPATAGONIA2021/" target="blank"><img src="./../sources/images/facebook.png" alt="logo_facebook" width="20" height="20"></a>
+            <a href="https://www.instagram.com/patagonialubricentro/" target="blank"><img src="./../sources/images/logotipo-de-instagram.png" alt="logo_instagram" width="20" height="20"></a>
+            <img src="./../sources/images/whatsapp.png" alt="logo_whatsapp" width="20" height="20">
+            <span class="redes__numero">+54 9297 4711049</span>
+        </div>
     </footer>
 </body>
 </html>

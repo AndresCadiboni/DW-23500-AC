@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lubricentro Patagonia</title>
+    <link rel="stylesheet" href="./../styles/styles.css">
 </head>
 <body>
     <header>
@@ -18,28 +19,41 @@
             </ul>
         </nav>
     </header>
-    <hr>
-    <main>
-        <h2>Contacto</h2>
-        <img src="./../sources/images/logo3.jpg" alt="logo_direccion" width="754" height="225">
-        <form action="">
-            <input type="email" name="email" id="" placeholder="Escribe tu email">
-            <br>
-            <textarea name="" id="" cols="60" rows="10" placeholder="Escribemos tu consulta"></textarea>
-            <br>
-            <input type="checkbox" name="dist">
-            <label for="dist">Quieres recibir información sobre sorteos y promociones?</label>
-            <br>
-            <input type="submit" value="ENVIAR">
-        </form>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.0515232211746!2d-69.0701249845653!3d-45.58950897910261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdefe5671afc144d%3A0xc15b09f932f63c6!2sLubricentro%20Patagonia!5e0!3m2!1ses!2sar!4v1636933600266!5m2!1ses!2sar" width="463" height="244" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <main class="main__contacto">
+        <div class="main__caja">
+        <h2 class="main__caja--titulo">Contacto</h2>
+        </div>
+        
+        <img src="./../sources/images/logo3.jpg" class="imagen__direccion" alt="logo_direccion">
+        
+        <div class="main__contacto__contenedor">
+            <div class="main__contacto__contenedor--interno">
+                <form action="">
+                    <div>
+                        <input type="email" name="email" id="" placeholder="Escribe tu email" class="main__contacto__contenedor--email">
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="60" rows="10" placeholder="Escribemos tu consulta" class="main__contacto__contenedor--consulta"></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="dist">
+                        <label for="dist">Quieres recibir información sobre sorteos y promociones?</label>
+                    </div>
+                    <input type="submit" value="ENVIAR" class="boton__enviar">
+                </form>
+            </div>
+            <iframe class="main__contacto__contenedor--mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.0515232211746!2d-69.0701249845653!3d-45.58950897910261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdefe5671afc144d%3A0xc15b09f932f63c6!2sLubricentro%20Patagonia!5e0!3m2!1ses!2sar!4v1636933600266!5m2!1ses!2sar" width="463" height="244" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </main>
-    <hr>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
     <footer>
-        <a href="https://m.facebook.com/LUBRICENTROPATAGONIA2021/" target="blank"><img src="./../sources/images/facebook.png" alt="logo_facebook" width="24" height="24"></a>
-        <a href="https://www.instagram.com/patagonialubricentro/" target="blank"><img src="./../sources/images/logotipo-de-instagram.png" alt="logo_instagram" width="24" height="24"></a>
-        <img src="./../sources/images/whatsapp.png" alt="logo_whatsapp" width="24" height="24">
-        <span>+54 9297 4711049</span>
+        <div class="redes">
+            <a href="https://m.facebook.com/LUBRICENTROPATAGONIA2021/" target="blank"><img src="./../sources/images/facebook.png" alt="logo_facebook" width="20" height="20"></a>
+            <a href="https://www.instagram.com/patagonialubricentro/" target="blank"><img src="./../sources/images/logotipo-de-instagram.png" alt="logo_instagram" width="20" height="20"></a>
+            <img src="./../sources/images/whatsapp.png" alt="logo_whatsapp" width="20" height="20">
+            <span class="redes__numero">+54 9297 4711049</span>
+        </div>
     </footer>
 </body>
 </html>
