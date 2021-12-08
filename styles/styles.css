@@ -3,6 +3,8 @@
 body{
 margin: 0;
 padding: 0;
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 /*--GRIDS--------------------------------------------------------------------------------- */
@@ -16,8 +18,6 @@ padding: 0;
         "footer footer footer"
     ;
     background-image: url(./../sources/images/bulones.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .body__prod{
     display: grid;
@@ -35,13 +35,11 @@ padding: 0;
         "footer footer footer footer"
     ;
     background-image: url(./../sources/images/electrodos.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .body__serv{
     display: grid;
     grid-template-columns: 10vw 40vw 40vw 10vw;
-    grid-template-rows: 10vh 5vh repeat(2, 270px) 5vh;
+    grid-template-rows: 10vh 5vh repeat(2, 40vh) 5vh;
     grid-template-areas: 
         "header header header header"
         "caja caja caja caja"
@@ -50,8 +48,45 @@ padding: 0;
         "footer footer footer footer"
     ;
     background-image: url(./../sources/images/soldador2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+.body__prom{
+    display: grid;
+    grid-template-columns: 10vw 40vw 40vw 10vw;
+    grid-template-rows: 10vh 5vh repeat(2, 40vh) 5vh;
+    grid-template-areas: 
+    "header header header header"
+    "caja caja caja caja"
+    ". prom1 prom2 ."
+    ". prom3 prom4 ."
+    "footer footer footer footer"
+    ;
+    background-image: url(./../sources/images/manijas.jpg);
+}
+.body__cont{
+    display: grid;
+    grid-template-columns: 20vw repeat(2, 30vw) 20vw;
+    grid-template-rows: 10vh 5vh repeat(2, 40vh) 5vh;
+    grid-template-areas: 
+    "header header header header"
+    "caja caja caja caja"
+    ". contacto contacto ."
+    ". email mapa ."
+    "footer footer footer footer"
+    ;
+    background-image: url(./../sources/images/cartel.jpg);
+}
+.body__nosotros{
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 10vh 5vh 30vh 50vh 5vh;
+    grid-template-areas:
+    "header header header"
+    "caja caja caja"
+    ". . ."
+    ". nosotros ."
+    "footer footer footer"
+    ;
+    background-image: url(./../sources/images/nosotros.jpg);
 }
 
 /*--HEADER---------------------------------------------------------------------------------*/
@@ -259,151 +294,115 @@ nav ul li a{
     line-height: 42px;
 }
 
-/*---PROMySOR-----------------------------------*/
-.main__sor{
-    background-image: url(./../sources/images/manijas.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: auto;
-    padding-top: 10vh;
-    height: 90vh;
-}
-.main__sor--alineacion{
+/*---PROMOCIONESySERVICIOS--------------------*/
+.prom__1{
+    grid-area: prom1;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    padding-top: 20px;
 }
-.main__sor__img{
-    width: 350px;
-    height: 265px;
-    border-radius: 10px;
-    margin: 0px 10px;
-}
-.main__sor--texto{
-    font-family: Inconsolata;
-    color: whitesmoke;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 42px;
+.prom__2{
+    grid-area: prom2;
     display: flex;
-    justify-content: end;
-    margin-right: 4%;
+    justify-content: center;
+}
+.prom__3{
+    grid-area: prom3;
+    display: flex;
+    justify-content: center;
+}
+.prom__4{
+    grid-area: prom4;
+    display: flex;
+    justify-content: center;
+}    
+.prom--img{    
+    max-width: 350px;
+    max-height: 265px;
+    border-radius: 10px;
+    margin-top: 2vh;
 }
 
-/*---CONTACTO----------------------------------*/
+/*---CONTACTO---------------------------------*/
 .main__contacto{
-    background-image: url(./../sources/images/cartel.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: auto;
-    padding-top: 10vh;
-    height: 90vh;
+    grid-area: contacto;
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 .imagen__direccion{
-    width: 800px; 
-    height: 270px;
+    max-width: 800px; 
+    max-height: 270px;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    justify-self: start;
 }
-.main__contacto__contenedor{
-    display: flex;
-    flex-direction: row;
-}
-.main__contacto__contenedor--interno{
-    background-color: whitesmoke;
-    border-radius: 10px;
-    width: 550px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
+.main__email{
+    grid-area: email;
+    display: block;
     justify-content: center;
     align-items: center;
-    margin: 15px;
+
 }
-.main__contacto__contenedor--email{
-    width: 460px;
+.main__email__contenedor{
     font-family: Inconsolata;
     font-style: italic;
     font-weight: 100;
     font-size: 15px;
-    margin: 5px;
+    margin: 10px 5px;
+    width: 25vw;
 }
-.main__contacto__contenedor--consulta{
-    width: 460px;
+.main__email__consulta{
     font-family: Inconsolata;
     font-style: italic;
     font-weight: 100;
     font-size: 15px;
-    margin: 5px;   
+    margin: 0px 5px 3px 5px; 
+    width: 25vw;
 }
 .boton__enviar{
-    margin: 10px;
+    margin: 5px;
 }
-.main__contacto__contenedor--mapa{
+.main__mapa{
+    grid-area: mapa;
     border-radius: 10px;
-    width: 550px;
-    height: 300px;
+    width: 25vw;
+    height: 35vh;
     display: flex;
-    margin: 15px;
+    justify-self: center;
+    align-self: center;
 }
 
-/*---NOSOTROS------------------------------------*/
-.main__nosotros{
-    background-image: url(./../sources/images/nosotros.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: auto;
-    padding-top: 10vh;
-    height: 90vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.main__nosotros__contenedor{
+/*---NOSOTROS---------------------------------*/
+/* .main__nosotros__contenedor{
+
+} */
+.main__nosotros__contenedor--texto{
+    grid-area: nosotros;
     background-color: whitesmoke;
     border-radius: 10px;
-    width: 850px;
-    height: 300px;
+    width: 80vh;
+    height: 40vh;
     opacity: 85%;
+    display: flex;
+    justify-items: center;
     text-align: center;
-    margin: 15px 15px 40px 15px;
-    position: relative;
-}
-.main__nosotros__contenedor--texto{
     font-family: Inconsolata;
     font-style: italic;
     font-weight: 100;
     font-size: 30px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 10px;
-}
+    margin: auto; 
 
+}
 /*---FOOTER-----------------------------------*/
 footer{
     grid-area: footer;
     background-color:#E96B42;
-    width: 100%;
-    height: 5vh;
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0px -10px 4px rgba(0, 0, 0, 0.4);
-    position: fixed;
-    bottom: 0px;
+    position: sticky;
     font-family: Inconsolata;
     font-weight: 600;
     font-size: 2vh;
     line-height: 21px;
+    z-index: 41;
 }
 .redes{
     position: absolute;
