@@ -371,9 +371,6 @@ nav ul li a{
 }
 
 /*---NOSOTROS---------------------------------*/
-/* .main__nosotros__contenedor{
-
-} */
 .main__nosotros__contenedor--texto{
     grid-area: nosotros;
     background-color: whitesmoke;
