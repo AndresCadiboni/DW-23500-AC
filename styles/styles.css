@@ -167,6 +167,13 @@ nav ul li a{
     display: flex;
     align-items: center;
     text-align: center;
+    transition: transform 1s;
+}
+.prod__1:hover{
+    transform: scale(1.05,1.05);
+    border: solid #96D2D3;
+    border-width: 5px;
+    background-color: #BBBB;
 }
 .prod__2{
     grid-area: prod2;
@@ -178,6 +185,13 @@ nav ul li a{
     display: flex;
     align-items: center;
     text-align: center;
+    transition: transform 1s;
+}
+.prod__2:hover{
+    transform: scale(1.05,1.05);
+    border: solid #96D2D3;
+    border-width: 5px;
+    background-color: #BBBB;
 }
 .prod__3{
     grid-area: prod3;
@@ -189,6 +203,13 @@ nav ul li a{
     display: flex;
     align-items: center;
     text-align: center;
+    transition: transform 1s;
+}
+.prod__3:hover{
+    transform: scale(1.05,1.05);
+    border: solid #96D2D3;
+    border-width: 5px;
+    background-color: #BBBB;
 }
 .prod__4{
     grid-area: prod4;
@@ -200,6 +221,13 @@ nav ul li a{
     display: flex;
     align-items: center;
     text-align: center;
+    transition: transform 1s;
+}
+.prod__4:hover{
+    transform: scale(1.05,1.05);
+    border: solid #96D2D3;
+    border-width: 5px;
+    background-color: #BBBB;
 }
 .prod__5{
     grid-area: prod5;
@@ -211,6 +239,13 @@ nav ul li a{
     display: flex;
     align-items: center;
     text-align: center;
+    transition: transform 1s;
+}
+.prod__5:hover{
+    transform: scale(1.05,1.05);
+    border: solid #96D2D3;
+    border-width: 5px;
+    background-color: #BBBB;
 }
 .prod__6{
     grid-area: prod6;
@@ -222,6 +257,13 @@ nav ul li a{
     display: flex;
     align-items: center;
     text-align: center;
+    transition: transform 1s;
+}
+.prod__6:hover{
+    transform: scale(1.05,1.05);
+    border: solid #96D2D3;
+    border-width: 5px;
+    background-color: #BBBB;
 }
 .producto--img{
     border-radius: 10px;
