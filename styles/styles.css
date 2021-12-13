@@ -101,6 +101,10 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    border-left: solid #96D2D3;
+    border-bottom: solid #96D2D3;
+    border-right: solid #96D2D3;    
+    border-width: 3px;
 }
 nav ul li{
     display: inline;
@@ -289,6 +293,13 @@ nav ul li a{
     display: flex;
     align-items: center;
     text-align: center;
+    transition: transform 1s;
+}
+.serv__1:hover{
+    transform: scale(1.05,1.05);
+    border: solid #96D2D3;
+    border-width: 5px;
+    background-color: #BBBB;
 }
 .serv__2{
     grid-area: serv2;
@@ -300,6 +311,13 @@ nav ul li a{
     display: flex;
     align-items: center;
     text-align: center;
+    transition: transform 1s;
+}
+.serv__2:hover{
+    transform: scale(1.05,1.05);
+    border: solid #96D2D3;
+    border-width: 5px;
+    background-color: #BBBB;
 }
 .serv__3{
     grid-area: serv3;
@@ -311,6 +329,13 @@ nav ul li a{
     display: flex;
     align-items: center;
     text-align: center;
+    transition: transform 1s;
+}
+.serv__3:hover{
+    transform: scale(1.05,1.05);
+    border: solid #96D2D3;
+    border-width: 5px;
+    background-color: #BBBB;
 }
 .serv__4{
     grid-area: serv4;
@@ -322,6 +347,13 @@ nav ul li a{
     display: flex;
     align-items: center;
     text-align: center;
+    transition: transform 1s;
+}
+.serv__4:hover{
+    transform: scale(1.05,1.05);
+    border: solid #96D2D3;
+    border-width: 5px;
+    background-color: #BBBB;
 }
 .serv--img{
     border-radius: 10px;
@@ -442,6 +474,10 @@ footer{
     font-size: 2vh;
     line-height: 21px;
     z-index: 41;
+    border-left: solid #96D2D3;
+    border-top: solid #96D2D3;
+    border-right: solid #96D2D3;    
+    border-width: 3px;
 }
 .redes{
     position: absolute;
